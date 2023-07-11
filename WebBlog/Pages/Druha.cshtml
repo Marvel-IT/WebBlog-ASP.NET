@@ -1,0 +1,14 @@
+﻿@page "/second/{Jmeno?}"
+@model WebBlog.Pages.DruhaModel
+@{
+}
+
+<h1>Druhá</h1>
+
+<p>Hello World!</p>
+<p>@(Model.Jmeno ?? "Nicmoc")</p>
+
+<form>
+    <input type="text" placeholder="Jméno" class="form-control w-25" name="jmeno"/>
+    <button type="submit" class="btn btn-primary">Pozdrav</button>
+</form>
